@@ -5,9 +5,12 @@ alias Ria.SQL
 
 # ...
 
-SQL.query("SELECT NOW()")
-SQL.query("SELECT ? AS ONE", [1])
-SQL.query(MyProject.Repo, "SELECT ? AS TWO", [2])
+SQL.query("SELECT current_date()")
+# [%{"current_date()" => {2017, 11, 16}}]
+SQL.query("SELECT ? AS one", [1])
+# [%{"one" => 1}]
+SQL.query(MyProject.Repo, "SELECT ? AS two", [2])
+# [%{"two" => 2}]
 ```
 
 ## Installation
