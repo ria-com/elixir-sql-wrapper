@@ -23,5 +23,5 @@ end
 ```elixir
 # config/dev.exs, config/prod.exs, config/test.exs
 config :mariaex,
-  default_repo: NewautoElixir.Repo
+  default_repo: MyProject.Repo
 ```
